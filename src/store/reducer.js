@@ -18,7 +18,10 @@ const reducer = (state = initialState,action) => {
                 globalKeyBoard: !state.globalKeyBoard
             };
         default:
-            return state.username + action.value;
+            return {
+                ...state,
+                username : state.username? state.username + action.value : action.value
+            };
     }
     return  state;
 };

@@ -7,7 +7,7 @@ const LoginWindow = ( {username,pass,click}) => {
         return (
             <div className="signon-box">
                 <LoginFormComponent username={username} pass={pass}></LoginFormComponent>
-                <KeyPadComponent click={click}/>
+                <KeyPadComponent/>
             </div>
         );
 
