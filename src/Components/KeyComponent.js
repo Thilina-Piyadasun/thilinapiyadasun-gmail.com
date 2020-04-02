@@ -6,11 +6,10 @@ const KeyComponent = ({keypadValue,click}) => {
 
     return(
         <button type="button" className="numpad-key"
-                value={keypadValue}
-                onClick=
-                    {()=> store.dispatch({type :"KEYPAD",value:0})}>{keypadValue}
+    value={keypadValue}
+    onClick={click.bind(this,keypadValue)}>{keypadValue}
         </button>
-    );
+);
 };
 
 export default KeyComponent;
