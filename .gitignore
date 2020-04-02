@@ -1,0 +1,6 @@
+node_modules
+.idea/misc.xml
+.idea/modules.xml
+.idea/ReactKeyBoard.iml
+.idea/vcs.xml
+.gitignore
