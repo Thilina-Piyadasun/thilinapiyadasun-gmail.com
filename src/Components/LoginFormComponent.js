@@ -1,9 +1,10 @@
 import React from 'react';
+import withBorder from "../hoc/WithBorder";
 
 const LoginFormComponent = (props) => {
     return (
 
-        <div className="signon-box-left">
+        <div className="signon-box-left" onClick={props.log}>
             <div className="signon-form-row">
                 <div className="signon-form-txt">User ID</div>
                 <input value={props.username}></input>
@@ -17,4 +18,4 @@ const LoginFormComponent = (props) => {
         )
 };
 
-export default LoginFormComponent;
+export default withBorder(LoginFormComponent,"dotted");

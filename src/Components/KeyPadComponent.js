@@ -1,13 +1,14 @@
 import React from 'react';
 import KeyComponent from './KeyComponent'
+import withBorder from "../hoc/WithBorder";
 
 
-const KeyPadComponent = () => {
+const KeyPadComponent = (props) => {
 
-    let keys =[[1,2,3],[4,5,6],[7,8,9]];
+   // let keys =[[1,2,3],[4,5,6],[7,8,9]];
     return (
         <div>
-            <div className="numpad-wrap">
+            <div className="numpad-wrap"  onClick={props.log}>
                 <div className="numpad-col-1">
                     <div className="numpad-row">
                         <KeyComponent keypadValue="1"></KeyComponent>
@@ -41,4 +42,4 @@ const KeyPadComponent = () => {
     );
 };
 
-export default KeyPadComponent;
+export default withBorder(KeyPadComponent,"inset");

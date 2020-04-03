@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import KeyPadComponent from'./Components/KeyPadComponent'
 import LoginFormComponent from'./Components/LoginFormComponent'
 
@@ -10,7 +10,6 @@ const LoginWindow = ( {username,pass,click}) => {
                 <KeyPadComponent/>
             </div>
         );
-
 };
 
 export default LoginWindow;

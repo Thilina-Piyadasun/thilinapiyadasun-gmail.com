@@ -41,3 +41,5 @@
   border: #282c34;
   border-spacing: 20px;
 }
+.inset {border-style: inset;}
+.dotted {border-style: dotted;}

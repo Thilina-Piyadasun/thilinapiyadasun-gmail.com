@@ -23,7 +23,6 @@ const reducer = (state = initialState,action) => {
                 username : state.username? state.username + action.value : action.value
             };
     }
-    return  state;
 };
 
 export default reducer;

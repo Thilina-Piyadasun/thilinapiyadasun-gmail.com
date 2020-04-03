@@ -16,7 +16,6 @@ class App extends Component{
 
         store.subscribe(()=> {
             this.setState(store.getState());
-            console.log("[ component  mount]",store.getState());
         })
     }
 
